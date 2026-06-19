@@ -168,22 +168,9 @@ header { background:var(--navy); position:relative; overflow:hidden; padding:0; 
 .p-action-btn.print { background:var(--navy); }
 
 /* ── PRICING ── */
-.pricing-card { background:var(--navy); color:white; border-radius:6px; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 4px 20px rgba(18,41,74,0.3); }
-.pricing-top { padding:16px 18px 12px; position:relative; overflow:hidden; flex:1; }
-.pricing-top::after { content:'🩺'; position:absolute; right:10px; top:10px; font-size:80px; opacity:0.06; pointer-events:none; }
-.plan-eyebrow { font-family:'Oswald',sans-serif; font-size:10px; letter-spacing:2.5px; color:#80C8E8; margin-bottom:7px; }
-.plan-name { font-size:19px; font-weight:900; line-height:1.25; margin-bottom:10px; }
-.plan-name span { color:#80C8E8; }
-.free-box { background:rgba(255,255,255,0.07); border:1px solid rgba(255,255,255,0.12); border-radius:5px; padding:8px 11px; margin-bottom:9px; }
-.free-label { font-size:9px; color:rgba(255,255,255,0.5); margin-bottom:2px; }
-.free-val { font-size:12.5px; font-weight:700; }
-.free-limit { font-size:9px; color:rgba(255,255,255,0.4); margin-top:1px; }
-.scene-box { background:rgba(255,255,255,0.07); border:1px solid rgba(255,255,255,0.12); border-radius:5px; padding:10px 11px; margin-bottom:10px; }
-.scene-label { font-size:9px; color:rgba(255,255,255,0.55); margin-bottom:6px; }
-.plan-perks { display:flex; flex-direction:column; gap:5px; }
-.perk { display:flex; align-items:flex-start; gap:7px; font-size:10.5px; color:rgba(255,255,255,0.85); }
-.perk::before { content:'✓'; color:#80C8E8; font-weight:700; flex-shrink:0; }
-.pricing-bottom { border-top:1px solid rgba(255,255,255,0.1); padding:12px 18px; display:flex; gap:12px; align-items:center; }
+.pricing-card { background:var(--navy); color:white; border-radius:6px; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 4px 20px rgba(18,41,74,0.3); padding:18px; }
+.pricing-top { position:relative; overflow:hidden; flex:1; display:flex; flex-direction:column; justify-content:center; }
+.pricing-top::after { content:'🩺'; position:absolute; right:-10px; top:-10px; font-size:120px; opacity:0.06; pointer-events:none; }
 .qr-canvas-wrap { width:64px; height:64px; background:white; border-radius:5px; display:flex; align-items:center; justify-content:center; flex-shrink:0; padding:4px; }
 #qr-kansatu canvas, #qr-kansatu img { width:56px !important; height:56px !important; }
 .qr-info { display:flex; flex-direction:column; justify-content:center; }
@@ -509,38 +496,19 @@ footer strong { color:rgba(255,255,255,0.7); }
       </div>
     </div>
 
-    <!-- PRICING -->
+    <!-- QR ACCESS -->
     <div class="pricing-card">
       <div class="pricing-top">
-        <div class="plan-eyebrow">FREE TO USE</div>
-        <div class="plan-name"><span>完全無料</span>で<br>全機能を使える</div>
-        <div class="free-box">
-          <div class="free-label">🆓 無料プラン</div>
-          <div class="free-val">全機能・無制限で使えます</div>
-          <div class="free-limit">登録不要・インストール不要</div>
-        </div>
-        <div class="scene-box">
-          <div class="scene-label">こんな場面で活用できます</div>
-          <div class="plan-perks">
-            <div class="perk">介護施設・病棟の日常的な申し送り</div>
-            <div class="perk">夜間・休日オンコール時の状態報告</div>
-            <div class="perk">事故・急変時の初期記録と連絡管理</div>
-            <div class="perk">訪問看護先での状態変化の記録</div>
-            <div class="perk">新人スタッフの観察・報告力の教育</div>
-          </div>
-        </div>
-      </div>
-      <div class="pricing-bottom">
         <div class="qr-canvas-wrap"><div id="qr-kansatu"></div></div>
-        <div class="qr-info">
-          <div class="qr-label">QRコードを読み取ってアクセス</div>
-          <a href="https://tacchibanana.github.io/ONMUSUBI-JYOUTAI-KANSATU/" target="_blank" class="qr-scan-link">
-            <span class="qr-scan-icon">📲</span>
-            <span class="qr-scan-text">今すぐ無料で試す</span>
-            <span class="qr-arrow">→</span>
-          </a>
-          <div class="qr-note">© 2026 ONMUSUBI / TACCHIBANANA</div>
-        </div>
+      </div>
+      <div class="qr-info" style="margin-top:15px;">
+        <div class="qr-label">QRコードを読み取ってアクセス</div>
+        <a href="https://tacchibanana.github.io/ONMUSUBI-JYOUTAI-KANSATU/" target="_blank" class="qr-scan-link">
+          <span class="qr-scan-icon">📲</span>
+          <span class="qr-scan-text">アプリを試す</span>
+          <span class="qr-arrow">→</span>
+        </a>
+        <div class="qr-note">© 2026 ONMUSUBI / TACCHIBANANA</div>
       </div>
     </div>
 
